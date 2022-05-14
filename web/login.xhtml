@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:pm="http://primefaces.org/morpheus">
+
+    <h:head>
+        <title>Universidad de Quintana Roo</title>
+        <style type="text/css">
+            .bodi {
+                font-family: Tahoma,sans-serif;
+                font-size: 110%;
+                background: url("./web/images/fondo.jpg") repeat-x;
+            }
+        </style>
+    </h:head>
+    <h:body styleClass="bodi" >
+        <h:form>
+            <p:messages autoUpdate="true" closable="true" showIcon="false"/>
+            Cargando, espere por favor...
+            <p:remoteCommand id="remoto" autoRun="true"  actionListener="#{usuarioCtrl.validaEntrada}"></p:remoteCommand>
+        </h:form>
+
+    </h:body>
+</html>
+

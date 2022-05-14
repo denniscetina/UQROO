@@ -1,0 +1,79 @@
+/*
+Theme name: GREENUQROO
+Description: interface para sistema SUGA de la Universidad de Quintana Roo
+Slicer: David Gómez
+Designer:david Gómez
+
+Colores
+Verde oscuro: #00492c
+Gris:         #f9f9f9
+Gris claro:   #e0e0e0
+
+
+*/
+
+/*estilo generales*/
+body{
+        border: 0;
+        margin: 0;
+        padding: 0;
+        outline: 0;
+        
+}
+@media (max-width: 1156px) and (min-width:300px) {
+  #masterBar ul{
+    margin-top: 0px !important;
+    float: left !important;
+  }
+  #masterBar .sep{
+    display:none;
+  }
+}
+.fixer{
+    clear: both;
+}
+#container{
+    width: 100%;
+}
+#header{
+    background:#00492c;
+}
+#logoContainer{
+    margin: 31px 0 31px 21px;
+    float: left;
+}
+#masterBar ul{
+    background: rgba(0,0,0,.4);
+    float: right;
+    margin: 57px 21px 31px 21px;
+    border-radius: 10px;
+     font-size: 12px;
+    border:2px solid #007245;
+}
+#masterBar ul .sep{
+    margin: 0;
+    padding: 18px 0px 18px 0px;
+    opacity: .5;
+    
+} 
+/*@font-face{
+    font-family: OpenSansReg;
+    src: url("../fonts/OpenSans-Regular.TTF"), url("../fonts/opensans-regular-webfont.eot");
+}*/
+#masterBar ul li{
+    font-family: OpenSansReg, Verdana;
+    float: left;
+    list-style: none;
+    padding: 15px 10px 15px 10px;
+    font-size: 10px;
+}
+#masterBar a{
+        color:#ededed;
+        text-decoration: none;
+}
+#masterBar a:hover{
+        color:yellow;
+}
+.emaill{
+    color:#fce8aa; 
+}

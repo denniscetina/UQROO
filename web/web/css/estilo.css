@@ -1,0 +1,389 @@
+/* 
+    Document   : estilo
+    Created on : 2/10/2012, 10:21:34 AM
+    Author     : Genner
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+.ui-datatable-scrollable-header-box{
+    width: 100% !important;
+}
+.ui-inputfield, .ui-widget-content .ui-inputfield, .ui-widget-header .ui-inputfield {
+    box-shadow: 0 0px 0px 0px;
+}
+
+.ui-datatable-scrollable .ui-datatable-scrollable-body table,
+.ui-datatable-scrollable .ui-datatable-scrollable-header table,
+.ui-datatable-scrollable .ui-datatable-scrollable-footer table{
+    width: 100% !important;
+}
+
+.customDialog {
+}
+
+.ui-dialog.customDialog .ui-dialog-title {
+    background-color: #F5DA81;
+}
+
+.buscar{
+    width: 200px !important;
+}
+.radioSinBorde{
+    border: hidden !important;
+    border-left: hidden;
+    border-bottom: hidden;
+    border-top: hidden;
+    border-right: hidden;
+
+}
+.confirmado .fc-event-skin{
+    color: white !important;
+    background-color: #01A9DB   !important;
+}
+
+.realizado .fc-event-skin{
+    color: white !important;
+    background-color: green !important;
+}
+.sinconfirmar .fc-event-skin{
+}
+
+.conpedi .fc-event-skin{
+    color: white !important;
+    background-color: orange   !important;
+}
+
+.reapedi .fc-event-skin{
+    color: white !important;
+    background-color: olive !important;
+}
+
+.nuepedi .fc-event-skin{
+    color: white !important;
+    background-color: teal !important;
+}
+
+root { 
+    display: block;
+}
+
+.colNoBorde{
+    border: 0px solid !important;
+    border-bottom: 0px solid;
+    border-top: 0px solid;
+    border-left: 0px solid;
+    border-right: 0px solid;
+}
+
+column{
+    border: 0px solid !important;
+    border-bottom: 0px solid;
+    border-top: 0px solid;
+    border-left: 0px solid;
+    border-right: 0px solid;
+}
+
+.colDerNormalNB{
+    text-align: right !important;
+    font-size: 11px !important;
+    font-weight: normal !important;
+}
+
+.colIzqNormalNB{
+    text-align: left !important;
+    font-size: 11px !important;
+    font-weight: normal !important;
+}
+
+.colTxtDerNegrita{
+    text-align: right !important;
+    font-size: 11px !important;
+    font-weight: bold !important;
+}
+
+.colTxtIzqNegrita{
+    text-align: left !important;
+    font-size: 11px !important;
+    font-weight: bold !important;
+}
+
+.colTxtCentNegrita{
+    text-align: center !important;
+    font-size: 11px !important;
+    font-weight: bold !important;
+}
+
+.colTxtCentNorm{
+    text-align: center !important;
+    font-size: 11px !important;
+    font-weight: normal !important;
+}
+
+.textoNormal{
+    font-size: 11px !important;
+    font-weight: normal !important;
+}
+.detalle {
+    background: url('../images/icons/detalle.png') no-repeat !important;
+    height:17px;
+    width:17px;
+}
+
+.agregar {
+    background: url('../images/icons/agregar.png') no-repeat !important;
+    height:16px;
+    width:16px;
+}
+.borrar {
+    background: url('../images/icons/borrar.png') no-repeat !important;
+    height:16px;
+    width:16px;
+}
+.editar {
+    background: url('../images/icons/editar.png') no-repeat !important;
+    height:17px !important;
+    width:17px !important;
+}
+
+.guardar {
+    background: url('../images/icons/guardar.png') no-repeat !important;
+    height:16px;
+    width:16px;
+}
+.regresar {
+    background: url('../images/icons/regresar.png') no-repeat !important;
+    height:16px;
+    width:16px;
+}
+
+.seguir {
+    background: url('../images/icons/seguir.png') no-repeat !important;
+    height:16px;
+    width:16px;
+}
+.selecciona {
+    background: url('../images/icons/selecciona.png') no-repeat !important;
+    height:16px;
+    width:16px;
+}
+
+.descargar {
+    background: url('../images/icons/descargar.png') no-repeat !important;
+    height:16px;
+    width:16px;
+}
+
+.salir {
+    background: url('../images/icons/salir.png') no-repeat !important;
+    height:16px;
+    width:16px;
+}
+
+.email {
+    background: url('../images/icons/email.png') no-repeat !important;
+    height:16px;
+    width:16px;
+}
+
+.noaprueba {
+    background: url('../images/icons/noaprueba.png') no-repeat !important;
+    height:16px;
+    width:16px;
+}
+
+.adjunto {
+    background: url('../images/icons/adjunto.png') no-repeat !important;
+    height:16px;
+    width:16px;
+}
+.etiqueta {
+    background: url('../images/icons/etiqueta.png') no-repeat !important;
+    height:16px;
+    width:16px;
+}
+
+.candado {
+    background: url('../images/icons/cerrar.png') no-repeat !important;
+    height:16px;
+    width:16px;
+}
+
+.vigente {
+    background: url('../images/icons/vigente.png') no-repeat !important;
+    height:16px;
+    width:16px;
+}
+.aceptar {
+    background: url('../images/icons/aceptar.png') no-repeat !important;
+    height:16px;
+    width:16px;
+}
+
+.imprimir {
+    background: url('../images/icons/imprimir.png') no-repeat !important;
+    height:16px;
+    width:16px;
+}
+
+.excel {
+    background: url('../images/icons/excel.png') no-repeat !important;
+    height:16px;
+    width:16px;
+}
+
+.importar {
+    background: url('../images/icons/importar.png') no-repeat !important;
+    height:16px;
+    width:16px;
+}
+.tarea{
+    background-color: #F5DA81 !important;
+    text-indent: 1em;
+}
+
+.tarea2{
+    font-style:  italic;
+    font-size: 12px;
+    text-indent: 2em;
+}
+
+.variable{
+    font-weight: bold;
+}
+
+.variable2{
+    font-style: normal;
+    font-family: serif;
+    font-size: 15px;
+    text-indent: 2em;
+}
+
+.objetivo{
+    font-style: normal;
+    font-family:sans-serif;
+    font-weight: bolder;
+    font-size: 16px;
+
+}
+
+.raiz{
+    font-style: italic;
+    font-family: Helvetica;
+    font-size: 15px;
+    color: olive;
+    
+}
+
+.departamento{
+    text-indent: 1em;
+}
+.direccion{
+    font-weight: bold;
+}
+
+.indicadores{
+    width: 9px !important;
+    font-weight: normal !important;
+    font-size: 9px !important;
+    text-align: center !important;
+    word-wrap: break-word !important;
+    word-break:break-all !important;
+    margin-left: 0px !important;
+
+}
+.meses{
+    width: 5px;
+    font-weight: normal;
+    font-size: 9px;
+    text-align: center;
+}
+.tareas{
+    font-weight: bold;
+    font-size: 9px;
+    text-align: center;
+    background-color:#F5DA81 !important;
+}
+.titulo{
+    width: 9px;
+    font-weight: normal;
+    font-size: 9px;
+    text-align: center;
+    word-wrap: break-word;
+    word-break:break-all;
+    margin-left: 0px;
+}
+.tabla{
+    width: 100%;
+}
+
+.tituloAmarillo{
+    background-color:#F5DA81 !important;
+}
+
+.tablaPlana.ui-datatable td{
+    border: hidden;
+}
+.tablaPlana.ui-datatable th{
+    border: hidden;
+    background: transparent;
+}
+
+.tablaArch.ui-datatable{
+    padding-top: auto; 
+}
+.tablaArch.ui-datatable th{
+    background: transparent;
+    height: 0px;
+    border-bottom: hidden;
+    border-top: hidden;
+}
+.ui-fileupload-content.ui-corner-bottom {
+    border-bottom: hidden;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+/////////////////////
+
+/*    .ui-datatable-header{
+        background:#69b66d !important;//#EDF3F6; //#0288d1;
+        border: none !important;
+        color:white !important;
+        text-shadow: none !important;
+        text-decoration: none !important;
+        font-weight: normal !important;
+        font-size: 14px !important;
+        border-color: #69b66d !important;
+    }
+
+    .ui-datatable-footer{
+        background:#c6dbd2 !important;//#EDF3F6; //#0288d1;
+        // border: none !important;
+        color:#7c7e7e  !important;
+        text-shadow: none !important;
+        text-decoration: none !important;
+        font-weight: normal !important;
+        font-size: 12px !important;
+    }
+
+    .ui-datatable table tbody .ui-state-highlight > td {
+        background-color: #26a69a;
+        color: #ffffff;
+    }
+    .ui-paginator {
+        background-color:  #dae8ef !important;//#0277bd;
+        border-radius: 1px;
+    }
+      .tablag.ui-datatable th{
+        background:  #dae8ef;
+        box-shadow: 0px 0px 0px 0px; 
+        text-shadow: none; 
+
+    }*/
+/////////////////

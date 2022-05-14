@@ -1,0 +1,119 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+
+    <h:body>
+        <style>
+
+            .progress {
+                position: relative;
+                display: flex;
+            }
+            .progress-track {
+                position: absolute;
+                top: 5px;
+                width: 100%;
+                height: 5px;
+                background-color: #dfe3e4;
+                z-index: -1;
+            }
+
+        </style>
+        <h:form id="frm" onkeypress="return event.keyCode !== 13">
+            <div class="ui-g ui-fluid">
+                <div class="ui-g-12 ui-sm-12 ui-md-12 ui-lg-12">
+                    <div class="card card-w-title border-top-primary">
+                        <h5  class="title-h5" >
+                            <i class="fa fa-address-card" aria-hidden="true"></i>
+                            Admision
+                        </h5>
+                        
+                        <div class="ui-g ui-fluid"> 
+
+                            <div class="ui-g-12  ui-sm-12 ui-md-12 ui-lg-6">
+                                <div class=" section_in_panel">
+                                    <i class="fa fa-calendar-o" aria-hidden="true" style=" margin-right: 5px;"></i>
+                                    <h:outputText value="Periodo " />
+                                </div>
+                                <div class="ui-g-12 ui-md-6 ui-lg-12">
+                                    <p:outputLabel value="Periodo para el que aplica  :" for="periodo" class="form-label" />
+                                    <p:selectOneRadio id="periodo" 
+                                                      layout="responsive" 
+                                                      columns="1"
+                                                      value="1" 
+                                                      required="true" requiredMessage="Selecciona un periodo">
+                                        <p:ajax update="mperiodo" event="valueChange"></p:ajax>
+                                        <f:selectItem itemLabel="Primavera 2022" itemValue="1"></f:selectItem>
+                                    </p:selectOneRadio> 
+                                    <p:message id="mperiodo" for="periodo" />
+                                </div>
+                                
+                                                       
+                            </div>
+                            <div class="ui-g-12 ui-sm-12 ui-md-12 ui-lg-6">
+                                <div class=" section_in_panel" >
+                                    <i class="fa fa-tag" aria-hidden="true" style=" margin-right: 5px;"></i>
+                                    <h:outputText value="Matrícula" />
+                                </div>
+                                <div class="ui-g ui-fluid"> 
+                                    <div class="ui-g-12 ui-sm-12 ui-md-12 ui-lg-12">
+                                        <p:outputLabel value="¿Tienes Matrícula de la UQROO? :" for="pmatricula" class="form-label" />
+                                        <p:selectOneRadio id="pmatricula" value="1"
+                                                          required="true"
+                                                          requiredMessage="Selecciona una opción" >
+                                            <f:selectItem itemLabel="SÍ" itemValue="SI" />
+                                            <f:selectItem itemLabel="NO" itemValue="NO" />
+                                        </p:selectOneRadio>  
+                                        <p:message id="mpmatricula" for="pmatricula"/>
+                                    </div>
+                                    <div class="ui-g-12 ui-sm-12 ui-md-12 ui-lg-12">
+                                        <p:outputLabel value="Matricula :" for="matricula" class="form-label"/>
+                                        <p:inputMask id="matricula"  autoClear="false" slotChar="" 
+                                                     placeholder="Escriba la matrícula" 
+                                                     requiredMessage="Ingrese una matrícula válida" 
+                                                     value="11-11111"
+                                                     mask="99-99999">
+                                            <p:ajax update="matricula,mmatricula"></p:ajax>
+                                        </p:inputMask>
+                                        <p:message id="mmatricula" for="matricula" />
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                       
+                        <div class="ui-g ui-fluid">
+                            <div class="ui-g-12 ui-sm-5 ui-md-4 ui-lg-3">
+                                <p:commandButton  
+                                    icon="fa fa-fw fa-chevron-left" 
+                                    value="Salir" 
+                                    update=":contenido" 
+                                    id="btn-back" 
+                                    process="@this"
+                                    oncomplete="PF('loaderd').hide(); " 
+                                    onstart="PF('loaderd').show();"  />
+                            </div>
+                            <div class="ui-g-12 ui-sm-2 ui-md-4 ui-lg-6"></div>
+                            <div class="ui-g-12 ui-sm-5 ui-md-4 ui-lg-3">
+                                <p:commandButton  
+                                    icon="fa fa-floppy-o" 
+                                    iconPos="right" 
+                                    value="Guardar" 
+                                    update=":contenido" 
+                                    oncomplete="PF('loaderd').hide(); " 
+                                    onstart="PF('loaderd').show();"  />
+                            </div>
+                        </div>
+
+
+                    </div>   
+                </div>
+            </div>            
+        </h:form>
+    </h:body>
+</html>
+

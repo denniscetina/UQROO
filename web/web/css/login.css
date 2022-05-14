@@ -1,0 +1,101 @@
+/*
+Theme name: GREENUQROO
+Description: interface para sistema SUGA de la Universidad de Quintana Roo
+Slicer: David Gómez
+Designer:david Gómez
+
+Colores
+Verde oscuro: #00492c
+Gris:         #f9f9f9
+Gris claro:   #e0e0e0
+
+
+*/
+
+/*estilo generales*/
+body{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    color: #ffffff;
+    background: #00492c;
+    text-align: center;
+    font-family: arial,helvetica,sans-serif;
+}
+#container{
+    margin: 0 auto;
+    width: 500px;
+}
+#head-form{
+    margin-top:200px;
+}
+#body-form{
+    margin-top:34px;
+}
+.user, .pass{
+    height: 45px;
+    width: 45px;
+    display: block;
+    float: left;
+}
+.user{
+    background: #dfdfdf url("../uqroo/img/user.png") no-repeat center ;
+}
+.pass{
+    background: #dfdfdf url("../uqroo/img/key.png") no-repeat center ;
+}
+.j_username{
+    padding: 0 4px 0 4px;
+    border:1px solid #dfdfdf;
+    color: #7b7b7b;
+    height: 43px;
+    width: 384px;
+    float: left;
+
+}
+.j_password{
+    padding: 0 4px 0 4px;
+    border:1px solid #dfdfdf;
+    color: #7b7b7b;
+    height: 43px;
+    width: 384px;
+    float: left;
+
+}
+/*.control input[type="text"]{
+        
+        padding: 0 4px 0 4px;
+        border:1px solid #dfdfdf;
+        color: #7b7b7b;
+        height: 43px;
+        width: 384px;
+        float: left
+}*/
+.control-group{
+    padding: 30px;
+
+    clear: both;
+}
+
+.enviar {
+    width: 100%;
+    padding: 10px 0 10px 0;
+    color:#ffffff;
+    background: #cc8200;
+    border: 0;
+    border-top: 2px solid #ffbd4a;
+    border-bottom:  2px solid #492e00;
+    font-size: 13px;
+}
+
+/*.control input[type="submit"]{
+        width: 100%;
+        padding: 10px 0 10px 0;
+        color:#ffffff;
+        background: #cc8200;
+        border: 0;
+        border-top: 2px solid #ffbd4a;
+        border-bottom:  2px solid #492e00;
+        font-size: 13px;
+}*/

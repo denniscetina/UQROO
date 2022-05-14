@@ -1,0 +1,287 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 6/02/2018, 11:03:05 AM
+    Author     : Sergio Solis
+*/
+
+@import url(http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
+
+
+
+body{
+    /* background-image: url(http://ti.uqroo.mx/template/uqroo/img/escudo-uqroo.png);
+     background-repeat: no-repeat;
+     background-position: center bottom;
+     background-size: 30%; */
+
+}
+
+/*Wizard */
+.image-container {
+    background-image: url("https://dev.acdnomina.com.mx/assets/wizard/assets/img/fondo.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.image-container {
+    min-height: 100vh;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+}
+
+
+.wizard-container {
+    padding-top: 100px;
+    z-index: 3;
+}
+
+/*fin wizard*/
+.op_uqroo h3{
+    background: none !important;
+} 
+
+.op_uqroo .ui-widget-content {
+    background-color: #333 !important;
+    border:none !important;
+}
+
+.op_uqroo > h3 > a {
+    color: #6D71A0;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+.op_uqroo .ui-widget-content a:hover {
+    background-color: #555 !important;
+    color:white !important;
+}
+.layout-tabmenu-contents {
+    /* width: 250px !important; */
+
+}
+.layout-sidebar {
+    /* width: 310px !important;  */
+}
+
+body .ui-radiobutton .ui-radiobutton-box.ui-state-active .ui-radiobutton-icon {
+    color: #628B7A !important;
+}
+
+body .ui-button.ui-state-hover {
+    background-color: #0A4A2F !important;
+}
+
+
+body .ui-datatable .ui-datatable-data tr.ui-state-highlight,body .ui-datatable thead th.ui-state-active {
+    background-color: #628B7A !important;
+    border-color: #CCC;
+}
+body .ui-state-active, body .ui-state-highlight {
+    background-color: #0A4A2F !important;
+
+}
+
+body table .ui-state-active, body  table .ui-state-highlight {
+    background-color: #628B7A !important;
+
+}
+
+
+body .ui-treetable .ui-treetable-data tr.ui-state-highlight {
+    border-color: #ccc !important;
+}
+
+body .ui-inputfield.ui-state-focus:not(.ui-state-error) {
+    border-color: #628B7A;
+}
+
+table[role=grid] input{
+    font-size: 12px;
+    width: 100% !important;
+}
+.agregar::before {
+    content: '\f040';
+    font: 700 12px/12px 'FontAwesome';                  
+}
+.editar::before {
+    content: '\f044';
+    font: 700 12px/12px 'FontAwesome';                  
+}
+.borrar::before {
+    content: '\f1f8';
+    font: 700 12px/12px 'FontAwesome';                  
+}
+.detalle::before {
+    content: '\f00b';
+    font: 700 12px/12px 'FontAwesome';                  
+}
+.regresar::before {
+    content: '\f148';
+    font: 700 12px/12px 'FontAwesome';                  
+}
+.guardar::before {
+    content: '\f0c7';
+    font: 700 12px/12px 'FontAwesome';                  
+}
+.imprimir::before {
+    content: '\f02f';
+    font: 700 12px/12px 'FontAwesome';                  
+}
+.ui-icon {
+    text-indent: unset !important;
+}
+.ui-menuitem {
+    font-size: 14px;
+}
+.titulo_seccion{
+    padding: .5em .5em 0em .5em;
+}
+.titulo_seccion .card{
+    margin:0px;
+}
+.titulo_seccion h5{
+    /* text-transform: uppercase; */
+    color:#0A4A31 !important;
+
+}
+
+body .ui-state-disabled {
+    opacity: 0.60
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #CCC;
+}
+::-moz-placeholder { /* Firefox 19+ */
+    color: #CCC;
+}
+:-ms-input-placeholder { /* IE 10+ */
+    color: #CCC;
+}
+:-moz-placeholder { /* Firefox 18- */
+    color: #CCC;
+}
+.item-container{
+    padding-bottom: 15px;
+}
+.rowc{
+    margin: 0px -7px;
+}
+/*Jair Torres 02-06-2020*/
+
+/*Breadcrum*/
+.breadcrumb {
+
+    background: transparent;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    padding: 7px 5px;
+    top: 15px;
+    right: 10px;
+    border-radius: 2px;
+}
+
+.breadcrumb > li {
+    display: inline-block;
+}
+
+.breadcrumb > li + li::before {
+    padding: 0 5px;
+    color: #ccc;
+    content: '>\00a0';
+}
+
+.content-header > .breadcrumb > li > a {
+    color: #444;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.breadcrumb > .active {
+    color: #777;
+}
+
+/*Cambios de la Plantilla*/
+.ui-datatable table thead th{
+    background: -moz-linear-gradient(center top , #FFFFFF, #DDDDDD) repeat scroll 0 0 rgba(0, 0, 0, 0) !important;
+    border-color: rgba(0, 0, 0, 0.2) !important;
+    box-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3) inset;
+    color: #555555 !important;
+    font-size: 12px !important;
+}
+
+body .ui-state-active, body .ui-state-highlight {
+    background-color: #115431 !important;
+}
+
+body .ui-menu.ui-menubar > .ui-menu-list > .ui-menuitem > .ui-menuitem-link {
+    font-size: 16px;
+    color: #00a65a !important;
+    border-radius: 3px;
+    background-color: #fff !important;
+    border-color: #00a65a;
+}
+
+body .ui-menu.ui-menubar > .ui-menu-list > .ui-menuitem > .ui-menuitem-link:hover {
+    color: #fff !important;
+    background-color: #00a65a !important;
+    border-color: #00a65a !important;
+}
+
+body .ui-menu.ui-menubar > .ui-menu-list > .ui-menuitem > .ui-menuitem-link .ui-menuitem-icon {
+    color: #00a65a !important;
+}
+
+body .ui-menu.ui-menubar > .ui-menu-list > .ui-menuitem {
+    width: auto;
+    margin-right: 5px !important;
+}
+
+body .ui-datatable .ui-datatable-data tr.ui-state-highlight, body .ui-datatable thead th.ui-state-active {
+    background-color: #7798B7 !important;
+}
+
+body .ui-button {
+    background-color: #09A0A5 !important;
+}
+
+body .ui-button.ui-state-hover {
+    background-color: #11BFC5 !important;
+}
+.border-top-primary {
+    border-top: 3px solid #00a65a !important;
+}
+.bday_title{
+    color: #00a65a !important;
+}
+
+.alert {
+    /*padding: 15px;
+    margin-bottom: 20px;*/
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+.embubble {
+    padding: 16px;
+    margin-bottom: 15px;
+    border: 1px solid transparent;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    border-radius: 5px;
+}
+.embubble-warning {
+    background-color: rgb(252, 248, 227);
+    border-color: #d4a513;
+    color: #121063;
+}
+.embubble-info {
+    background-color: #d1ecf1;
+    border-color: #77a5ae;
+    color: #121063;
+}

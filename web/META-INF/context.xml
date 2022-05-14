@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context antiJARLocking="true" path="/Proyecto">
+  <Resource auth="Container" driverClassName="oracle.jdbc.OracleDriver" 
+            logAbandoned="true" maxActive="150"
+            maxIdle="100" maxWait="3000" name="jdbc/conev2" 
+            password="saba22" removeAbandoned="true" 
+            removeAbandonedTimeout="60" 
+            type="javax.sql.DataSource" 
+            url="jdbc:oracle:thin:@172.16.2.110:1521:uqroprue" 
+            username="saba" validationQuery="select 1 from dual"/>
+
+</Context>

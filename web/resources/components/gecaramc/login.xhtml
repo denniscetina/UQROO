@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:composite="http://java.sun.com/jsf/composite">
+    <h:head>
+        <title>Universidad de Quintana Roo</title>
+        <link href=".web/css/login.css" type="text/css" rel="stylesheet"/>
+        <meta charset="UTF-8"/>
+    </h:head>
+    <h:body>         
+        <composite:interface  displayName="Pantalla de login" shortDescription="Pantalla de  login configurable">            
+            <composite:attribute name="txtBoton"></composite:attribute>
+            <composite:attribute name="usuario"></composite:attribute>
+            <composite:attribute name="password"></composite:attribute>
+            <composite:attribute name="srclogo"></composite:attribute>   
+            <composite:attribute name="validador" method-signature="void action(javax.faces.event.ActionEvent)" ></composite:attribute> 
+        </composite:interface>
+        <composite:implementation>
+            <div id="container">
+                <div id="wrapper-form">
+                    <div id="head-form"><img src="#{cc.attrs.srclogo}"/></div>
+                    <div id="body-form">  
+                        <h:form id="frmLoginUsers">
+                            <div class="control-group">
+                                <label class="user" for="j_username"></label>
+                                <div class="control">
+                                    <h:inputText id="j_username" class="j_username" required="true" requiredMessage="Usuario: es obligatorio" value="#{cc.attrs.usuario}"/>
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <label class="pass" for="j_password" ></label>
+                                <div class="control">
+                                    <h:inputSecret  id="j_password"  class="j_password" requiredMessage="Contraseña: es obligatorio"  required="true" value="#{cc.attrs.password}" />
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <div class="control">
+                                    <p:commandButton id="enviar" class="enviar" value="#{cc.attrs.txtBoton}" update="mlog" actionListener="#{cc.attrs.validador}" ajax="false" />
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <p:messages id="mlog" closable="true"></p:messages>
+                            </div>
+                        </h:form>
+                    </div>
+                </div>
+            </div>
+        </composite:implementation>
+    </h:body>
+</html>
