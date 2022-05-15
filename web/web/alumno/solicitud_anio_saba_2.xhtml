@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/XHtml.xhtml to edit this template
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+    <head>
+        <title>TODO supply a title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <style>
+
+            .progress {
+                position: relative;
+                display: flex;
+            }
+            .progress-track {
+                position: absolute;
+                top: 5px;
+                width: 100%;
+                height: 5px;
+                background-color: #dfe3e4;
+                z-index: -1;
+            }
+            .formulario{
+                background-color: var(--gris);
+                width: min(60rem, 100%);
+                margin: 0 auto;
+                padding: 2rem;
+                border-radius: 1rem;
+            }
+
+            .formulario fieldset{
+                border: none;
+            }
+
+            .formulario legend{
+                text-align: center;
+                font-size: 1.8rem;
+                text-transform: uppercase;
+                font-weight: 700;
+                margin-bottom: 2rem;
+                color: var(--primario);
+            }
+
+            @media (min-width: 768px) {
+                .contenedor-campos {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    grid-template-rows: auto auto 20rem;
+                    column-gap: 1rem;
+                }
+                .campo:nth-child(3),
+                .campo:nth-child(4) {
+                    grid-column: 1/3;
+                }
+            }
+
+            .campo{
+                margin-bottom: 1rem;
+            }
+
+            .campo label{
+                color: var(--blanco);
+                font-weight: bold;
+                margin-bottom: .5rem;
+                display: block;
+            }
+            .campo textarea{
+                height: 20rem;
+            }
+
+            .input-text{
+                width: 100%;
+                border: none;
+                padding: 1.5rem;
+                border-radius: .5rem;
+            }
+
+        </style>
+    </head>
+    <h:body>
+        <section>
+
+            <h:form class="formulario">
+                <fieldset>
+                    <legend>Solicitud de año sabático</legend>
+
+                    <div class="card">
+
+                        <p:row styleClass="my-heading-row">
+                            <h3>Datos del periodo sabático</h3>
+                        </p:row>
+                        <h:panelGrid columns="2"  
+                                     cellpadding="4" cellspacing="5">
+                            <p:outputLabel value="¿Disfrutó anteriormente un periodo sabático?" for="pmatricula" class="form-label" />
+                            <p:selectOneRadio id="pmatricula" value="1"
+                                              required="true"
+                                              requiredMessage="Selecciona una opción" >
+                                <f:selectItem itemLabel="SÍ" itemValue="SI" />
+                                <f:selectItem itemLabel="NO" itemValue="NO" />
+                            </p:selectOneRadio>
+
+
+                            <p:outputLabel for="button" value="Fecha de solicitud:"/>
+                            <p:calendar id="button" value="#{calendarView.date3}" showOn="button"/>
+
+                            <p:outputLabel for="button" value="Periodo y duración:"/>
+                            <p:inputText/>
+
+                            <p:outputLabel for="button" value="Institución"/>
+                            <p:inputText/>
+
+                        </h:panelGrid>
+
+                        <p:row styleClass="my-heading-row">
+                            <h3>Modalidades a realizar</h3>
+                        </p:row>
+
+
+                        <p:selectManyCheckbox id="basic" columns="1" value="#{manyCheckBox.selectedCourse}" layout="pageDirection">  
+                            <f:selectItem itemLabel="Redacción de libro académico o capítulo de libro." itemValue="1" />  
+                            <f:selectItem itemLabel="Realizar estudios de posgrados o de especialización." itemValue="2" />  
+                            <f:selectItem itemLabel="Finalizar la tesis de posgrado." itemValue="3" />
+                            <f:selectItem itemLabel="Elaborar material de diseño institucional." itemValue="4" />
+                            <f:selectItem itemLabel="Participar y generar productos en proyectos de investigación científica
+                                          , tecnológica o educativa (Individual o colectiva)." itemValue="5" />
+                            <f:selectItem itemLabel="Realizar estancias de investigación." itemValue="" />
+                        </p:selectManyCheckbox>
+
+                        <div>
+                            <p:row styleClass="my-heading-row">
+                                <h3>Lineamientos de la modalidad</h3>
+                            </p:row>
+                            <h:panelGrid columns="4"  
+                                         cellpadding="4" cellspacing="5">
+                                <p:outputLabel for="button" value="Carta de solicitud CAP"/>
+                                <h:form enctype="multipart/form-data">
+                                    <p:fileUpload value="#{fileUploadView.file}" mode="simple" skinSimple="true"/>
+                                </h:form>
+                                
+                                <p:outputLabel for="button" value="Carta de aprobación"/>
+                                <h:form enctype="multipart/form-data">
+                                    <p:fileUpload value="#{fileUploadView.file}" mode="simple" skinSimple="true"/>
+                                </h:form>
+                                
+                                <p:outputLabel for="button" value="Constancia de aprobación"/>
+                                <h:form enctype="multipart/form-data">
+                                    <p:fileUpload value="#{fileUploadView.file}" mode="simple" skinSimple="true"/>
+                                </h:form>
+                                
+                                <p:outputLabel for="button" value="Plan de estudios"/>
+                                <h:form enctype="multipart/form-data">
+                                    <p:fileUpload value="#{fileUploadView.file}" mode="simple" skinSimple="true"/>
+                                </h:form>
+                                
+                                <p:outputLabel for="button" value="Plan de trabajo"/>
+                                <h:form enctype="multipart/form-data">
+                                    <p:fileUpload value="#{fileUploadView.file}" mode="simple" skinSimple="true" />
+                                </h:form>
+
+                            </h:panelGrid>
+                        </div>
+
+                    </div>
+
+                    <div class="ui-g-12 ui-sm-5 ui-md-4 ui-lg-3">
+                                <p:commandButton  
+                                    icon="fa fa-floppy-o" 
+                                    iconPos="right" 
+                                    value="Agregar" 
+                                    update=":contenido" 
+                                    oncomplete="PF('loaderd').hide(); " 
+                                    onstart="PF('loaderd').show();"  />
+                            </div>
+                    <div class="ui-g-12 ui-sm-5 ui-md-4 ui-lg-3">
+                                <p:commandButton  
+                                    icon="fa fa-floppy-o" 
+                                    iconPos="right" 
+                                    value="Cancelar" 
+                                    update=":contenido" 
+                                    oncomplete="PF('loaderd').hide(); " 
+                                    onstart="PF('loaderd').show();"  />
+                            </div>
+                    <div class="ui-g-12 ui-sm-5 ui-md-4 ui-lg-3">
+                                <p:commandButton  
+                                    icon="fa fa-floppy-o" 
+                                    iconPos="right" 
+                                    value="Guardar" 
+                                    update=":contenido" 
+                                    oncomplete="PF('loaderd').hide(); " 
+                                    onstart="PF('loaderd').show();"  />
+                            </div>
+                </fieldset>
+            </h:form>
+        </section>
+
+    </h:body>
+</html>
