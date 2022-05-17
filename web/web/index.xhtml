@@ -79,6 +79,11 @@
                                                 oncomplete="PF('loader').hide();" 
                                                 onstart="PF('loader').show();"
                                                 update="contenido"/>
+                                    <p:menuitem value="Captura de solicitud" icon="pi pi-external-link" 
+                                                action="#{usuarioCtrl.redirect('alumno/solicitud_anio_saba')}"
+                                                oncomplete="PF('loader').hide();" 
+                                                onstart="PF('loader').show();"
+                                                update="contenido"/>
                                 </p:submenu>
                                 <p:submenu label="Configuraciones" class="op_suga">
                                     <p:menuitem value="Módulo 2" 
