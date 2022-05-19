@@ -84,6 +84,12 @@
                                                 oncomplete="PF('loader').hide();" 
                                                 onstart="PF('loader').show();"
                                                 update="contenido"/>
+                                   <p:menuitem value="Solicitud realizada para año sabatico" icon="pi pi-external-link" 
+                                                action="#{usuarioCtrl.redirect('alumno/solicitud_A')}"
+                                                oncomplete="PF('loader').hide();" 
+                                                onstart="PF('loader').show();"
+                                                update="contenido"/>
+                                    
                                 </p:submenu>
                                 <p:submenu label="Configuraciones" class="op_suga">
                                     <p:menuitem value="Módulo 2" 
